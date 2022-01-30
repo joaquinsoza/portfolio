@@ -14,7 +14,7 @@ if [[ ${containerID} ]]; then
 else
     echo "No previous container was found"
 fi
-
+ 
 echo "Searching for a previously built docker image."
 foundImageIDs=$(docker images ${imageName}:${versionTag} --quiet)
 if [[ $foundImageIDs ]]; then
