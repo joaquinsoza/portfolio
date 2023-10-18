@@ -6,8 +6,9 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+  --background-start-rgb: 250, 248, 239;
+  --background-end-rgb: 143, 141, 133;
+  /* --background-end-rgb: 94, 92, 84; */
 
   --callout-rgb: 20, 20, 20;
   --callout-border-rgb: 108, 108, 108;
@@ -48,3 +49,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* #FAF8EF
+#C3C1B8
+#8F8D85
+#5E5C54
+#312F29 */
