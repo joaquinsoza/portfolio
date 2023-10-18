@@ -1,23 +1,16 @@
-interface ButtonProps {
-  primary?: boolean;
-  size?: "small" | "large";
-  label?: string;
+import * as React from "react";
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
 }
- 
-export function Button({
-  primary = false,
-  label = "Boop",
-  size = "small",
-}: ButtonProps): JSX.Element{
+
+export function Button({ children, ...other }: ButtonProps): JSX.Element {
   return (
-    <button
-      style={{
-        backgroundColor: primary ? "red" : "blue",
-        fontSize: size === "large" ? "24px" : "14px",
-      }}
-      type='button'
-    >
-      {label}
+    <button type="button" {...other}>
+      {children}
     </button>
   );
-};
+}
+
+Button.displayName = "Button";
