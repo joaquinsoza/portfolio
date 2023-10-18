@@ -1,5 +1,8 @@
 # Turborepo starter
 
+Having a turborepo for this is definetely overkill... but wanted to try new things and test.
+Might build a builderplate
+
 This is an official starter Turborepo.
 
 ## Using this example
