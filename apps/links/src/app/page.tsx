@@ -1,39 +1,38 @@
-import { Card } from "ui";
-import styles from "./page.module.css";
+import Link from "next/link";
+import { Button } from "ui";
 
-const LINKS = [
-  {
-    title: "Docs",
-    href: "https://turbo.build/repo/docs",
-    description: "Find in-depth information about Turborepo features and API.",
-  },
-  {
-    title: "Learn",
-    href: "https://turbo.build/repo/docs/handbook",
-    description: "Learn more about monorepos with our handbook.",
-  },
-  {
-    title: "Templates",
-    href: "https://turbo.build/repo/docs/getting-started/from-example",
-    description: "Choose from over 15 examples and deploy with a single click.",
-  },
-  {
-    title: "Deploy",
-    href: "https://vercel.com/new",
-    description:
-      " Instantly deploy your Turborepo to a shareable URL with Vercel.",
-  },
-];
-
-export default function Page(): JSX.Element {
+export default function HomePage() {
   return (
-    <main className={styles.main}>
-      <div className={styles.grid}>
-        {LINKS.map(({ title, href, description }) => (
-          <Card className={styles.card} href={href} key={title} title={title}>
-            {description}
-          </Card>
-        ))}
+    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#FAF8EF] to-[#5E5C54] text-white">
+      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
+        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
+        </h1>
+        <Button>ss</Button>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
+          <Link
+            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+            href="https://create.t3.gg/en/usage/first-steps"
+            target="_blank"
+          >
+            <h3 className="text-2xl font-bold">First Steps →</h3>
+            <div className="text-lg">
+              Just the basics - Everything you need to know to set up your
+              database and authentication.
+            </div>
+          </Link>
+          <Link
+            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+            href="https://create.t3.gg/en/introduction"
+            target="_blank"
+          >
+            <h3 className="text-2xl font-bold">Documentation →</h3>
+            <div className="text-lg">
+              Learn more about Create T3 App, the libraries it uses, and how to
+              deploy it.
+            </div>
+          </Link>
+        </div>
       </div>
     </main>
   );
