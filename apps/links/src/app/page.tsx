@@ -46,8 +46,9 @@ export default function HomePage() {
           <span className="block text-xl font-normal tracking-normal">coderipper</span>
         </h1>
         <div className="flex flex-col gap-4 w-full max-w-2xl">
-          {links.map((link) => (
+          {links.map((link, index) => (
             <Link
+              key={index}
               className="flex rounded-lg w-full flex-row items-center duration-200 border justify-center hover:bg-[#343a40] text-[#343a40] hover:text-[#faf8ef] gap-4 border-[#5E5C54] h-10"
               href={link.href}
               target="_blank"
