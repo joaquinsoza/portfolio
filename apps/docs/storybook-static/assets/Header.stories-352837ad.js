@@ -5,4 +5,3 @@ import{H as c}from"./Header-98985233.js";import"./jsx-runtime-ffb262ed.js";impor
     }
   }
 }`,...(s=(o=e.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};var t,n,m;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:"{}",...(m=(n=r.parameters)==null?void 0:n.docs)==null?void 0:m.source}}};const l=["LoggedIn","LoggedOut"];export{e as LoggedIn,r as LoggedOut,l as __namedExportsOrder,i as default};
-//# sourceMappingURL=Header.stories-352837ad.js.map

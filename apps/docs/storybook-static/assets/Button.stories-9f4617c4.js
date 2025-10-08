@@ -19,4 +19,3 @@ import{j as S}from"./jsx-runtime-ffb262ed.js";import"./index-76fb7be0.js";import
     label: "Button"
   }
 }`,...(w=(O=l.parameters)==null?void 0:O.docs)==null?void 0:w.source}}};const I=["Primary","Secondary","Large","Small"];export{s as Large,t as Primary,n as Secondary,l as Small,I as __namedExportsOrder,D as default};
-//# sourceMappingURL=Button.stories-9f4617c4.js.map
